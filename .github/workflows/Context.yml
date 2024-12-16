@@ -15,4 +15,4 @@ jobs:
       echo "Actor ${{github.actor}}"
       echo "Worflow ${{github.workflow}}"
       echo "Run Id ${{github.run_id}}"
-      echo "Runner number ${{github.run_number}"
+      echo "Runner number ${{github.run_number}}"
