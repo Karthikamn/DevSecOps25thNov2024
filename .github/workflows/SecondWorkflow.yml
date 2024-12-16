@@ -5,14 +5,15 @@ on:
  push:
  workflow_dispatch:
 
+
 jobs:
  first-job:
   runs-on: ubuntu-latest
   steps:
-   - name: First Step
-     run: echo "First Worflow"
- second-job:
-  runs-on: windows-latest
-  steps:
-   - name: Second Step
-     run: echo "Second Worflow with second step in job"
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4.5.0
+      with:
+         distribution: 'microsoft'
+         java-version: '17'
+         
+   
