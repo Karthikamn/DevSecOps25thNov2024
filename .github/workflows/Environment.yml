@@ -13,8 +13,6 @@ jobs:
   environment: ${{inputs.TARGET_ENVIRONMENT}}
   steps:
    - name: Echo Vars 
-     run: |
-      echo " Secret variable ${{secrets.TEST_SECRET1}}"
-      echo " Var is ${{vars.VAR1}}"
+     run: echo  "Var is ${{vars.VAR1}}"
       
    
