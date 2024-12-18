@@ -14,9 +14,9 @@ jobs:
       - ubuntu-latest
       - windows-latest
    steps:  
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v4.0.1
       with:
-       node-version: ${matrix.node-version}}
+       node-version: ${{matrix.node-version}}
     
   
    
