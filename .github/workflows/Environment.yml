@@ -1,7 +1,6 @@
 name: Environment
 
 on:
- push:
  workflow_dispatch:
   inputs:
    TARGET_ENVIRONMENT:
@@ -11,7 +10,7 @@ on:
 jobs:
  echo-environment:
   runs-on: ubuntu-latest
-  environment: $${{inputs.TARGET_ENVIRONMENT}}
+  environment: ${{inputs.TARGET_ENVIRONMENT}}
   steps:
    - name: Echo Vars 
      run: |
